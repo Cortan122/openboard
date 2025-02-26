@@ -1,6 +1,6 @@
 # OpenBoard fork by Cortan122
 
-This is a fork of an old 2 years abandonned android keyboard.
+This is a fork of an old 3 years abandonned android keyboard.
 It is only meant to be used by me.
 So it will probably only be useful to you if you happen to have the exact same typing preferences.
 
@@ -9,6 +9,7 @@ So it will probably only be useful to you if you happen to have the exact same t
 - [x] Never capitalize any suggested words
 
 <hr/>
+
 # Old readme:
 
 <h1 align="center"><b>OpenBoard</b></h1>

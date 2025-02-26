@@ -38,7 +38,7 @@
         android:title="@string/prefs_long_press_keyboard_to_change_lang"
         android:summary="@string/prefs_long_press_keyboard_to_change_lang_summary"
         android:persistent="true"
-        android:defaultValue="true" />
+        android:defaultValue="false" />
 
     <CheckBoxPreference
         android:key="pref_enable_emoji_alt_physical_key"

@@ -114,7 +114,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static final String PREF_KEY_IS_INTERNAL = "pref_key_is_internal";
 
     public static final String PREF_ENABLE_METRICS_LOGGING = "pref_enable_metrics_logging";
-    
+
     public static final String PREF_SHOW_NUMBER_ROW =
             "pref_show_number_row";
 
@@ -241,7 +241,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
 
     public static boolean readAutoCorrectEnabled(final SharedPreferences prefs,
                                                  final Resources res) {
-        return prefs.getBoolean(PREF_AUTO_CORRECTION, true);
+        return prefs.getBoolean(PREF_AUTO_CORRECTION, false);
     }
 
     public static String readAutoCorrectConfidence(final SharedPreferences prefs,
@@ -376,7 +376,7 @@ public final class Settings implements SharedPreferences.OnSharedPreferenceChang
     public static int readDefaultClipboardHistoryRetentionTime(final Resources res) {
         return res.getInteger(R.integer.config_clipboard_history_retention_time);
     }
-    
+
     public static boolean readShowsNumberRow(final SharedPreferences prefs) {
         return prefs.getBoolean(PREF_SHOW_NUMBER_ROW, false);
     }

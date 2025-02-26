@@ -64,7 +64,7 @@
         <CheckBoxPreference
             android:key="pref_resize_keyboard"
             android:title="@string/prefs_resize_keyboard"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:persistent="true" />
 
         <org.dslul.openboard.inputmethod.latin.settings.SeekBarDialogPreference
