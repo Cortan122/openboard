@@ -328,7 +328,7 @@ public final class BinaryDictionary extends Dictionary {
             }
             if (len > 0) {
                 suggestions.add(new SuggestedWordInfo(
-                        new String(session.mOutputCodePoints, start, len),
+                        new String(session.mOutputCodePoints, start, len).toLowerCase(),
                         "" /* prevWordsContext */,
                         (int)(session.mOutputScores[j] * weightForLocale),
                         session.mOutputTypes[j],

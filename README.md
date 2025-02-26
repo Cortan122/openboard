@@ -1,3 +1,16 @@
+# OpenBoard fork by Cortan122
+
+This is a fork of an old 2 years abandonned android keyboard.
+It is only meant to be used by me.
+So it will probably only be useful to you if you happen to have the exact same typing preferences.
+
+## Features
+
+- [x] Never capitalize any suggested words
+
+<hr/>
+# Old readme:
+
 <h1 align="center"><b>OpenBoard</b></h1>
 <h4 align="center">100% FOSS keyboard, based on AOSP.</h4>
 <p align="center"><img src='fastlane/metadata/android/en-US/images/icon.png' height='128'></p>
@@ -13,7 +26,7 @@
 <a href="https://github.com/openboard-team/openboard/commits/master"><img src="https://img.shields.io/github/commits-since/openboard-team/openboard/latest" alt="GitHub commits since latest release (by date)"></a></p>
 <p align="center">
 <a href='https://f-droid.org/packages/org.dslul.openboard.inputmethod.latin'><img src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' alt='Get it on F-Droid' height='60'></a>
-<a href='https://play.google.com/store/apps/details?id=org.dslul.openboard.inputmethod.latin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height='60'/></a></p>  
+<a href='https://play.google.com/store/apps/details?id=org.dslul.openboard.inputmethod.latin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height='60'/></a></p>
 
 # Table of content
 
@@ -72,7 +85,7 @@ OpenBoard is a complex application, when contributing, you must take a step back
 - **Uses already in-place mechanism and take advantage of them**. In other terms, does not reinvent the wheel or uses shortcuts that could alter the consistency of the existing code.
 - **Has the lowest footprint possible**. OpenBoard code has been written by android experts (AOSP/Google engineers). It has been tested and runned on millions of devices. Thus, **existing code will always be safer than new code**. The less we alter existing code, the more OpenBoard will stay stable. Especially in the input logic scope.
 - **Does not bring any non-free code or proprietary binary blobs**. This also applies to code/binaries with unknown licenses. Make sure you do not introduce any closed-source library from Google.
-- **Complies with the user privacy principle OpenBoard follows**. 
+- **Complies with the user privacy principle OpenBoard follows**.
 
 In addition to previous elements, OpenBoard must stick to [F-Droid inclusion guidelines](https://f-droid.org/docs/Inclusion_Policy/).
 
@@ -94,14 +107,14 @@ In no particular order, here is the non-exhaustive list of known wanted features
 #### Edit keyboards content
 Keyboards content is often a complex concatenation of data from global to specific locales. For example, additional keys of a given key, also known as 'more keys' in code, are determined by concatenating infos from : common additional keys for a layout (eg. numbers), global locale (eg. common symbols) and specific locale (eg. accents or specific letters).
 
-To edit these infos, you'll need to generate the [KeyboardTextsTable.java](app/src/main/java/org/dslul/openboard/inputmethod/keyboard/internal/KeyboardTextsTable.java) file. 
+To edit these infos, you'll need to generate the [KeyboardTextsTable.java](app/src/main/java/org/dslul/openboard/inputmethod/keyboard/internal/KeyboardTextsTable.java) file.
 To do so :
 1. Make your modifications in [tools/make-keyboard-text/src/main/resources](tools/make-keyboard-text/src/main/resources)/values-YOUR LOCALE.
 2. Generate the new version of [KeyboardTextsTable.java](app/src/main/java/org/dslul/openboard/inputmethod/keyboard/internal/KeyboardTextsTable.java) by running Gradle task 'makeText' :
     ```sh
     ./gradlew tools:make-keyboard-text:makeText
     ```
-   
+
 #### Update emojis
 
 See make-emoji-keys tool [README](tools/make-emoji-keys/README.md).
