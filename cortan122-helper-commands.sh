@@ -15,6 +15,11 @@ sudo archlinux-java set java-11-openjdk
 /opt/android-sdk/platform-tools/adb shell "pm uninstall org.dslul.openboard.inputmethod.latin"
 /opt/android-sdk/platform-tools/adb install app/build/outputs/apk/debug/app-debug.apk
 
+# release (much faster)
+# (debug build is noticeably laggy)
+./gradlew assemble
+/opt/android-sdk/platform-tools/adb install app/build/outputs/apk/release/app-release.apk
+
 # trying to extract data from the app
 /opt/android-sdk/platform-tools/adb shell
 run-as org.dslul.openboard.inputmethod.latin

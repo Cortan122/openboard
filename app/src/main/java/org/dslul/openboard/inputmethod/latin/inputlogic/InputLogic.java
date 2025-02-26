@@ -2043,6 +2043,11 @@ public final class InputLogic {
      * @param settingsValues the current values of the settings.
      */
     private void insertAutomaticSpaceIfOptionsAndTextAllow(final SettingsValues settingsValues) {
+        final int codePoint = mConnection.getCodePointBeforeCursor();
+        if (codePoint == Constants.CODE_SPACE) return;
+        if (codePoint == Constants.NOT_A_CODE) return;
+        if (codePoint == Constants.CODE_DOUBLE_QUOTE && mConnection.isInsideDoubleQuoteOrAfterDigit()) return;
+
         if (settingsValues.shouldInsertSpacesAutomatically()
                 && settingsValues.mSpacingAndPunctuations.mCurrentLanguageHasSpaces
                 && !mConnection.textBeforeCursorLooksLikeURL()) {
