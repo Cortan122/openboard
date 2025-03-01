@@ -1,14 +1,19 @@
 # OpenBoard (now HeliBoard) fork by Cortan122
 
-This is a fork of an old 2 years abandonned android keyboard. (actually now not unmaintained. magic.)
+This is a fork of an old 3 years abandoned android keyboard. (actually now not unmaintained. magic.)
 It is only meant to be used by me.
 So it will probably only be useful to you if you happen to have the exact same typing preferences.
 
 ## Features
 
 - [x] Never capitalize any suggested words
-- [x] Default configs are the same as the ones i want
-- [x] Fix for funny spaces in quotes
+- [ ] Default settings are just like my default settings
+- [x] No more spaces inserted after quotes or after other spaces
+
+## Building
+
+This project, probably like all android project, is very annoying to build from the command line.
+I've documented some of my (mis)adventures in [this file](./cortan122-helper-commands.sh).
 
 <hr/>
 

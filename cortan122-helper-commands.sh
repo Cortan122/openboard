@@ -17,8 +17,8 @@ sudo archlinux-java set java-11-openjdk
 
 # release (much faster)
 # (debug build is noticeably laggy)
-./gradlew assemble
-/opt/android-sdk/platform-tools/adb install app/build/outputs/apk/release/app-release.apk
+./gradlew --max-workers=1 assemble
+/opt/android-sdk/platform-tools/adb install app/build/outputs/apk/release/HeliBoard_2.3+dev8-release.apk
 
 # trying to extract data from the app
 /opt/android-sdk/platform-tools/adb shell
