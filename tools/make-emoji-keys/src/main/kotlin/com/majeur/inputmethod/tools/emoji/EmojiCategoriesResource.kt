@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-only
+
 package com.majeur.inputmethod.tools.emoji
 
 import com.majeur.inputmethod.tools.emoji.model.EmojiData
@@ -119,7 +121,7 @@ class EmojiCategoriesResource(private val jarFile: JarFile) {
                     it.toString(radix = 16)
                             .uppercase()
                 }
-        return if (minApi > 19) "$cps||$minApi" else cps
+        return if (minApi > 21) "$cps||$minApi" else cps
     }
 
     private fun getMinApi(codes: IntArray, supportData: Map<Int, Int>): Int {

@@ -1,144 +1,146 @@
-# OpenBoard fork by Cortan122
+# OpenBoard (now HeliBoard) fork by Cortan122
 
-This is a fork of an old 3 years abandoned android keyboard.
+This is a fork of an old 2 years abandonned android keyboard. (actually now not unmaintained. magic.)
 It is only meant to be used by me.
 So it will probably only be useful to you if you happen to have the exact same typing preferences.
 
 ## Features
 
 - [x] Never capitalize any suggested words
-- [x] Default settings are just like my default settings
-- [x] No more spaces inserted after quotes or after other spaces
-
-## Building
-
-This project, probably like all android project, is very annoying to build from the command line.
-I've documented some of my (mis)adventures in [this file](./cortan122-helper-commands.sh).
+- [x] Default configs are the same as the ones i want
+- [x] Fix for funny spaces in quotes
 
 <hr/>
 
 # Old readme:
 
-<h1 align="center"><b>OpenBoard</b></h1>
-<h4 align="center">100% FOSS keyboard, based on AOSP.</h4>
-<p align="center"><img src='fastlane/metadata/android/en-US/images/icon.png' height='128'></p>
-<p align="center">
-<a href="https://github.com/openboard-team/openboard/actions/workflows/android-build.yml"><img src="https://img.shields.io/github/workflow/status/openboard-team/openboard/Build" alt="GitHub Workflow Status"></a>
-<a href="https://hosted.weblate.org/engage/openboard/"><img src="https://hosted.weblate.org/widgets/openboard/-/openboard/svg-badge.svg" alt="Translation status"></a>
-<a href="https://matrix.to/#/#openboard:matrix.org?via=matrix.org"><img src="https://img.shields.io/matrix/openboard:matrix.org" alt="Matrix"></a></p>
-<p align="center">
-<a href="https://github.com/openboard-team/openboard/releases"><img src="https://img.shields.io/github/v/release/openboard-team/openboard" alt="GitHub release (latest by date)"></a>
-<a href="https://f-droid.org/packages/org.dslul.openboard.inputmethod.latin"><img alt="F-Droid Version" src="https://img.shields.io/f-droid/v/org.dslul.openboard.inputmethod.latin?color=green&amp;logo=f-droid"></a>
-<a href="https://play.google.com/store/apps/details?id=org.dslul.openboard.inputmethod.latin"><img alt="Google Play Version" src="https://img.shields.io/endpoint?logo=google-play&amp;url=https%3A%2F%2Fplayshields.herokuapp.com%2Fplay%3Fi%3Dorg.dslul.openboard.inputmethod.latin%26l%3Dgoogle-play%26m%3D%24version"></a>
-<a href="https://github.com/openboard-team/openboard/releases"><img src="https://img.shields.io/github/release-date/openboard-team/openboard" alt="GitHub Release Date"></a>
-<a href="https://github.com/openboard-team/openboard/commits/master"><img src="https://img.shields.io/github/commits-since/openboard-team/openboard/latest" alt="GitHub commits since latest release (by date)"></a></p>
-<p align="center">
-<a href='https://f-droid.org/packages/org.dslul.openboard.inputmethod.latin'><img src='https://fdroid.gitlab.io/artwork/badge/get-it-on.png' alt='Get it on F-Droid' height='60'></a>
-<a href='https://play.google.com/store/apps/details?id=org.dslul.openboard.inputmethod.latin&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height='60'/></a></p>
+# HeliBoard
+HeliBoard is a privacy-conscious and customizable open-source keyboard, based on AOSP / OpenBoard.
+Does not use internet permission, and thus is 100% offline.
 
-# Table of content
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/helium314.keyboard/)
+[<img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get APK from GitHub" height="80">](https://github.com/Helium314/HeliBoard/releases/latest)
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/helium314.keyboard)
 
-- [Community](#community)
-- [Contribution ❤](#contribution-)
-   * [Issue reporting](#issue-reporting)
-   * [Translation](#translation)
-   * [Dictionary creation](#dictionary-creation)
-   * [Code contribution](#code-contribution)
-      + [Getting started](#getting-started)
-      + [Guidelines](#guidelines)
-      + [Current TODO list](#current-todo-list)
-      + [Project's side tools](#tooling)
+## Table of Contents
+
+- [Features](#features)
+- [Contributing](#contributing-)
+   * [Reporting Issues](#reporting-issues)
+   * [Translations](#translations)
+   * [To Community Creation](#to-community)
+   * [Code Contribution](CONTRIBUTING.md)
+- [To-do](#to-do)
 - [License](#license)
 - [Credits](#credits)
 
-# Community
-Join our [matrix] channel [here](https://matrix.to/#/#openboard:matrix.org?via=matrix.org).
+# Features
+<ul>
+  <li>Add dictionaries for suggestions and spell check</li>
+  <ul>
+    <li>build your own, or get them  <a href="https://codeberg.org/Helium314/aosp-dictionaries#dictionaries">here</a>, or in the <a href="https://codeberg.org/Helium314/aosp-dictionaries#experimental-dictionaries">experimental</a> section (quality may vary)</li>
+    <li>additional dictionaries for emojis or scientific symbols can be used to provide suggestions (similar to "emoji search")</li>
+    <li>note that for Korean layouts, suggestions only work using <a href="https://github.com/openboard-team/openboard/commit/83fca9533c03b9fecc009fc632577226bbd6301f">this dictionary</a>, the tools in the dictionary repository are not able to create working dictionaries</li>
+  </ul>
+  <li>Customize keyboard themes (style, colors and background image)</li>
+  <ul>
+    <li>can follow the system's day/night setting on Android 10+ (and on some versions of Android 9)</li>
+    <li>can follow dynamic colors for Android 12+</li>
+  </ul>
+  <li>Customize keyboard <a href="https://github.com/Helium314/HeliBoard/blob/main/layouts.md">layouts</a> (only available when disabling <i>use system languages</i>)</li>
+  <li>Customize special layouts, like symbols, number,  or functional key layout</li>
+  <li>Multilingual typing</li>
+  <li>Glide typing (<i>only with closed source library</i> ☹️)</li>
+  <ul>
+    <li>library not included in the app, as there is no compatible open source library available</li>
+    <li>can be extracted from GApps packages ("<i>swypelibs</i>"), or downloaded <a href="https://github.com/erkserkserks/openboard/tree/46fdf2b550035ca69299ce312fa158e7ade36967/app/src/main/jniLibs">here</a> (click on the file and then "raw" or the tiny download button)</li>
+  </ul>
+  <li>Clipboard history</li>
+  <li>One-handed mode</li>
+  <li>Split keyboard (only available if the screen is large enough)</li>
+  <li>Number pad</li>
+  <li>Backup and restore your settings and learned word / history data</li>
+</ul>
 
-<img src="images/matrix_qr.png" alt="Matrix QR Code" height="128">
+For [FAQ](https://github.com/Helium314/HeliBoard/wiki/FAQ) and more information about the app and features, please visit the [wiki](https://github.com/Helium314/HeliBoard/wiki)
 
-# Contribution ❤
+# Contributing ❤
 
-## Issue reporting
+## Reporting Issues
 
-Whether you encountered a bug, or want to see a new feature in OpenBoard, you can contribute to the project by opening a new issue [here](https://github.com/openboard-team/openboard/issues). Your help is always welcomed !
+Whether you encountered a bug, or want to see a new feature in HeliBoard, you can contribute to the project by opening a new issue [here](https://github.com/Helium314/HeliBoard/issues). Your help is always welcome!
 
-Before opening a new issue, be sure to check the following :
- - **Does the issue already exist ?** Make sure a similar issue has not been reported by browsing [existing issues](https://github.com/openboard-team/openboard/issues).
- - **Is the issue still relevant ?** Make sure your issue is not already fixed in the latest version of OpenBoard.
- - **Did you use the issue template ?** It is important to make life of our kind contributors easier by avoiding  issues that miss key informations to their resolution.
+Before opening a new issue, be sure to check the following:
+ - **Does the issue already exist?** Make sure a similar issue has not been reported by browsing [existing issues](https://github.com/Helium314/HeliBoard/issues?q=). Please search open and closed issues.
+ - **Is the issue still relevant?** Make sure your issue is not already fixed in the latest version of HeliBoard.
+ - **Is it a single topic?** If you want to suggest multiple things, open multiple issues.
+ - **Did you use the issue template?** It is important to make life of our kind contributors easier by avoiding issues that miss key information to their resolution.
+Note that issues that that ignore part of the issue template will likely get treated with very low priority, as often they are needlessly hard to read or understand (e.g. huge screenshots, not providing a proper description, or addressing multiple topics). Blatant violation of the guidelines may result in the issue getting closed.
 
-*Please avoid opening issues to ask for a release date, for PR reviews/merges, for more activity on the project, or worth for more contributors. If you have any interrogations on these topics, read [this comment](https://github.com/openboard-team/openboard/issues/619#issuecomment-1179534276) from issue [#619](https://github.com/openboard-team/openboard/issues/619).*
+If you're interested, you can read the following useful text about effective bug reporting (a bit longer read): https://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 
-## Translation
-You can help in translating OpenBoard in your language through our [Weblate project](https://hosted.weblate.org/engage/openboard/).
+## Translations
+Translations can be added using [Weblate](https://translate.codeberg.org/projects/heliboard/). You will need an account to update translations and add languages. Add the language you want to translate to in Languages -> Manage translated languages in the top menu bar.
+Updating translations in a PR will not be accepted, as it may cause conflicts with Weblate translations.
 
-[![Translation status](https://hosted.weblate.org/widgets/openboard/-/openboard/287x66-grey.png)](https://hosted.weblate.org/engage/openboard/)
+Some notes on translations
+* when translating metadata, translating the changelogs is rather useless. It's available as it was requested by translators.
+* the `hidden_features_message` is horrible to translate with Weblate, and serves little benefit as it's just a copy of what's already in the wiki: https://github.com/Helium314/HeliBoard/wiki/Hidden-functionality. It's been made available in the app on user request/contribution.
 
-## Dictionary creation
-To create or update a dictionary for your language, you can use [this tool](https://github.com/remi0s/aosp-dictionary-tools). You will need a wordlist, as described [here](dictionaries/sample.combined). The output .dict file must be put in [res/raw](app/src/main/res/raw), and its wordlist in [dictionaries](/dictionaries).
+## To Community
+You can share your themes, layouts and dictionaries with other people:
+* Themes can be saved and loaded using the menu on top-right in the _adjust colors_ screen
+  * You can share custom colors in a separate [discussion section](https://github.com/Helium314/HeliBoard/discussions/categories/custom-colors)
+* Custom keyboard layouts are text files whose content you can edit, copy and share
+  * this applies to main keyboard layouts and to special layouts adjustable in advanced settings
+  * see [layouts.md](layouts.md) for details
+  * You can share custom layouts in a separate [discussion section](https://github.com/Helium314/HeliBoard/discussions/categories/custom-layout)
+* Creating dictionaries is a little more work
+  * first you will need a wordlist, as described [here](https://codeberg.org/Helium314/aosp-dictionaries/src/branch/main/wordlists/sample.combined) and in the repository readme
+  * the you need to compile the dictionary using [external tools](https://github.com/remi0s/aosp-dictionary-tools)
+  * the resulting file (and ideally the wordlist too) can be shared with other users
+  * note that there will not be any further dictionaries added to this app, but you can add dictionaries to the [dictionaries repository](https://codeberg.org/Helium314/aosp-dictionaries)
 
-For your dictionary to be merged into OpenBoard, **you must provide the wordlist you used**, as well as its license if any.
+## Code Contribution
+See [Contribution Guidelines](CONTRIBUTING.md)
 
-## Code contribution
+# To-do
+__Planned features and improvements:__
+* Improve support for modifier keys (_alt_, _ctrl_, _meta_ and _fn_), some ideas:
+  * keep modifier keys on with long press
+  * keep modifier keys on until the next key press
+  * use sliding input
+* Less complicated addition of new keyboard languages (e.g. #519)
+* Additional and customizable key swipe functionality
+  * Some functionality will not be possible when using glide typing
+* Add and enable emoji dictionaries by default (if available for language)
+* Clearer / more intuitive arrangement of settings
+  * Maybe hide some less used settings by default (similar to color customization)
+* Make use of the `.com` key in URL fields (currently only available for tablets)
+  * With language-dependent TLDs
+* [Bug fixes](https://github.com/Helium314/HeliBoard/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
 
-### Getting started
-
-OpenBoard project is based on Gradle and Android Gradle Plugin. To get started, you'll just need to install [Android Studio](https://developer.android.com/studio), and import project 'from Version Control / Git / Github' by providing this git repository [URL](https://github.com/openboard-team/openboard) (or git SSH [URL](git@github.com:openboard-team/openboard.git)).
-
-Once everything got setted up correctly, you're ready to go !
-
-### Guidelines
-
-OpenBoard is a complex application, when contributing, you must take a step back and make sure your contribution :
-- **Uses already in-place mechanism and take advantage of them**. In other terms, does not reinvent the wheel or uses shortcuts that could alter the consistency of the existing code.
-- **Has the lowest footprint possible**. OpenBoard code has been written by android experts (AOSP/Google engineers). It has been tested and runned on millions of devices. Thus, **existing code will always be safer than new code**. The less we alter existing code, the more OpenBoard will stay stable. Especially in the input logic scope.
-- **Does not bring any non-free code or proprietary binary blobs**. This also applies to code/binaries with unknown licenses. Make sure you do not introduce any closed-source library from Google.
-- **Complies with the user privacy principle OpenBoard follows**.
-
-In addition to previous elements, OpenBoard must stick to [F-Droid inclusion guidelines](https://f-droid.org/docs/Inclusion_Policy/).
-
-### Current TODO list
-In no particular order, here is the non-exhaustive list of known wanted features :
-- [x] ~~Updated emoji support~~
-- [ ] MaterialYou ([M3](https://m3.material.io/)) support
-- [x] ~~One-handed mode feature~~
-- [ ] Android [autofill](https://developer.android.com/guide/topics/text/ime-autofill) support
-- [x] ~~Clipboard history feature~~
-- [ ] Text navigation/selection panel
-- [ ] Multi-locale typing
-- [ ] Emoji search
-- [ ] Emoji variant saving
-- [ ] Glide typing
-
-### Tooling
-
-#### Edit keyboards content
-Keyboards content is often a complex concatenation of data from global to specific locales. For example, additional keys of a given key, also known as 'more keys' in code, are determined by concatenating infos from : common additional keys for a layout (eg. numbers), global locale (eg. common symbols) and specific locale (eg. accents or specific letters).
-
-To edit these infos, you'll need to generate the [KeyboardTextsTable.java](app/src/main/java/org/dslul/openboard/inputmethod/keyboard/internal/KeyboardTextsTable.java) file.
-To do so :
-1. Make your modifications in [tools/make-keyboard-text/src/main/resources](tools/make-keyboard-text/src/main/resources)/values-YOUR LOCALE.
-2. Generate the new version of [KeyboardTextsTable.java](app/src/main/java/org/dslul/openboard/inputmethod/keyboard/internal/KeyboardTextsTable.java) by running Gradle task 'makeText' :
-    ```sh
-    ./gradlew tools:make-keyboard-text:makeText
-    ```
-
-#### Update emojis
-
-See make-emoji-keys tool [README](tools/make-emoji-keys/README.md).
+__What will _not_ be added:__
+* Dictionaries for more languages (you can still download them)
+* Anything that requires additional permissions, unless there is a _very_ good reason
 
 # License
 
-OpenBoard project is licensed under GNU General Public License v3.0.
+HeliBoard (as a fork of OpenBoard) is licensed under GNU General Public License v3.0.
 
  > Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
 
 See repo's [LICENSE](/LICENSE) file.
 
+Since the app is based on Apache 2.0 licensed AOSP Keyboard, an [Apache 2.0](LICENSE-Apache-2.0) license file is provided.
+The icon is licensed under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). A [license file](LICENSE-CC-BY-SA-4.0) is also included.
+
 # Credits
-- Icon by [Marco TLS](https://www.marcotls.eu)
+- Icon by [Fabian OvrWrt](https://github.com/FabianOvrWrt) with contributions from [The Eclectic Dyslexic](https://github.com/the-eclectic-dyslexic)
+- [OpenBoard](https://github.com/openboard-team/openboard)
 - [AOSP Keyboard](https://android.googlesource.com/platform/packages/inputmethods/LatinIME/)
 - [LineageOS](https://review.lineageos.org/admin/repos/LineageOS/android_packages_inputmethods_LatinIME)
 - [Simple Keyboard](https://github.com/rkkr/simple-keyboard)
 - [Indic Keyboard](https://gitlab.com/indicproject/indic-keyboard)
-- Our [contributors](https://github.com/openboard-team/openboard/graphs/contributors)
+- [FlorisBoard](https://github.com/florisboard/florisboard/)
+- Our [contributors](https://github.com/Helium314/HeliBoard/graphs/contributors)

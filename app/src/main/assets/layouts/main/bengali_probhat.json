@@ -1,0 +1,141 @@
+[
+  [
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ধ" },
+      "default": { "label": "দ", "popup": { "relevant": [{ "label": "ধ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঊ" },
+      "default": { "label": "ূ", "popup": { "relevant": [{ "label": "ঊ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঈ" },
+      "default": { "label": "ী", "popup": { "relevant": [{ "label": "ঈ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ড়" },
+      "default": { "label": "র", "popup": { "main": { "label": "ড়" }, "relevant": [{ "label": "র‍্য" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঠ" },
+      "default": { "label": "ট", "popup": { "relevant": [{ "label": "ঠ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঐ" },
+      "default": { "label": "এ", "popup": { "relevant": [{ "label": "ঐ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "উ" },
+      "default": { "label": "ু", "popup": { "relevant": [{ "label": "উ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ই" },
+      "default": { "label": "ি", "popup": { "relevant": [{ "label": "ই" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঔ" },
+      "default": { "label": "ও", "popup": { "relevant": [{ "label": "ঔ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ফ" },
+      "default": { "label": "প", "popup": { "relevant": [{ "label": "ফ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ৈ" },
+      "default": { "label": "ে", "popup": { "relevant": [{ "label": "ৈ" }]}}
+    }
+  ],
+  [
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "অ" },
+      "default": { "label": "া", "popup": { "relevant": [{ "label": "অ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ষ" },
+      "default": { "label": "স", "popup": { "relevant": [{ "label": "ষ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঢ" },
+      "default": { "label": "ড", "popup": { "relevant": [{ "label": "ঢ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "থ" },
+      "default": { "label": "ত", "popup": { "main": { "label": "থ" }, "relevant": [{ "label": "ৎ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঘ" },
+      "default": { "label": "গ", "popup": { "relevant": [{ "label": "ঘ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঃ" },
+      "default": { "label": "হ", "popup": { "relevant": [{ "label": "ঃ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঝ" },
+      "default": { "label": "জ", "popup": { "relevant": [{ "label": "ঝ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "খ" },
+      "default": { "label": "ক", "popup": { "relevant": [{ "label": "খ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ং" },
+      "default": { "label": "ল", "popup": { "relevant": [{ "label": "ং" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ৌ" },
+      "default": { "label": "ো", "popup": { "relevant": [{ "label": "ৌ" }]}}
+    }
+  ],
+  [
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "য" },
+      "default": { "label": "য়", "popup": { "main": { "label": "য" }, "relevant": [{ "label": "্য" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঢ়" },
+      "default": { "label": "শ", "popup": { "relevant": [{ "label": "ঢ়" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ছ" },
+      "default": { "label": "চ", "popup": { "relevant": [{ "label": "ছ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঋ" },
+      "default": { "label": "আ", "popup": { "relevant": [{ "label": "ঋ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ভ" },
+      "default": { "label": "ব", "popup": { "relevant": [{ "label": "ভ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ণ" },
+      "default": { "label": "ন", "popup": { "relevant": [{ "label": "ণ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঙ" },
+      "default": { "label": "ম", "popup": { "relevant": [{ "label": "ঙ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ৃ" },
+      "default": { "label": "ঞ", "popup": { "relevant": [{ "label": "ৃ" }]}}
+    },
+    { "$": "shift_state_selector",
+      "manualOrLocked": { "label": "ঁ", "popup": { "relevant": [
+            { "label": "!autoColumnOrder!6"},
+            { "label": "়" },
+            { "label": "ৄ"},
+            { "label": "ঽ"},
+            { "label": "ৢ"},
+            { "label": "ৱ"},
+            { "label": "ৣ"},
+            { "label": "ৗ"},
+            { "label": "ৠ"},
+            { "label": "৺"},
+            { "label": "ঌ"},
+            { "label": "ৰ"},
+            { "label": "ৡ" }]}},
+      "default": { "label": "্", "popup": { "relevant": [{ "label": "ঁ" }]}}
+    }
+  ]
+]

@@ -1,0 +1,12 @@
+[popup_keys]
+г ґ
+ь
+і ї
+' ’ ‚ ‘
+" ” „ “
+
+[labels]
+alphabet: АБВ
+
+[tlds]
+ua
