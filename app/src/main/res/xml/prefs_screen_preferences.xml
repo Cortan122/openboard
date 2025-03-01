@@ -113,24 +113,11 @@
             android:defaultValue="false"
             android:persistent="true" />
 
-<<<<<<< HEAD
-        <CheckBoxPreference
-            android:key="pref_voice_input_key"
-            android:title="@string/voice_input"
-            android:defaultValue="true"
-            android:persistent="true" />
-
-        <CheckBoxPreference
-            android:key="pref_show_clipboard_key"
-            android:title="@string/show_clipboard_key"
-            android:defaultValue="true"
-=======
         <SwitchPreference
             android:key="remove_redundant_popups"
             android:title="@string/remove_redundant_popups"
             android:summary="@string/remove_redundant_popups_summary"
             android:defaultValue="false"
->>>>>>> f0bb541b728b5298dbf9da82937168df25552f3b
             android:persistent="true" />
 
     </PreferenceCategory>
